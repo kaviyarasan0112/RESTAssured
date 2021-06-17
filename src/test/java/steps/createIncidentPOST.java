@@ -15,12 +15,12 @@ public class createIncidentPOST {
 
 	@Given("Enter the endpoint")
 	public void enterTheEndpoint() {
-		RestAssured.baseURI = "https://dev101740.service-now.com/api/now/table/incident";
+		RestAssured.baseURI = "https://dev101573.service-now.com/api/now/table/incident";
 	}
 
 	@Given("Provide the authetication details")
 	public void provideTheAutheticationDetails() {
-		RestAssured.authentication= RestAssured.basic("admin","N2IoYuwzaD7U");
+		RestAssured.authentication= RestAssured.basic("admin","sHGiLcCqtX64");
 	}
 
 	@When("send the POST request")

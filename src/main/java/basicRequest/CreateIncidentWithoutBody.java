@@ -13,12 +13,12 @@ public class CreateIncidentWithoutBody {
 //		Step1: Get URI / Endpoint for the server
 		RestAssured.baseURI = "https://dev101740.service-now.com/api/now/table/incident";
 //		Step2: Authentication (basic Auth)
-		RestAssured.authentication =  RestAssured.basic("admin","N2IoYuwzaD7U");
+		RestAssured.authentication= RestAssured.basic("admin","sHGiLcCqtX64");
 //		Step3: Request Type (Post) -> Ctrl+2 , l
 		Response response = RestAssured
 				.given()
 				.contentType(ContentType.JSON)
-				.body("{    \"short_description\": \"Created a new Incident as TestAPI\",    \"category\": \"software\"}")
+				.body("{\"short_description\": \"Created a new Incident on 15June21\",    \"category\": \"software\"}")
 				.post();
 //		Step5: Print Response 
 		response.prettyPrint();

@@ -13,10 +13,11 @@ public class GetAllIncidentsInXML {
 	
 	@Test
 	public void getAllIncident() {
+		
 //		Step1: Get URI / Endpoint for the server
-		RestAssured.baseURI = "https://dev101740.service-now.com/api/now/table/incident";
+		RestAssured.baseURI = "https://dev101573.service-now.com/api/now/table/incident";
 //		Step2: Authentication (basic Auth)
-		RestAssured.authentication= RestAssured.basic("admin","N2IoYuwzaD7U");
+		RestAssured.authentication= RestAssured.basic("admin","sHGiLcCqtX64");
 //		Step3: Request Type (Get) with param
 		Response response = RestAssured
 				.given()
@@ -32,7 +33,7 @@ public class GetAllIncidentsInXML {
 		XmlPath xmlPath = response.xmlPath();
 		List<String> ListOfsysID = xmlPath.getList("response.result.sys_id");
 		System.out.println(ListOfsysID.get(0));
-		System.out.println(response.prettyPrint());
+		//System.out.println(response.prettyPrint());
 		
 		
 	}
