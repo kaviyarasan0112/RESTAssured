@@ -9,7 +9,11 @@ import io.restassured.response.Response;
 import io.restassured.response.ValidatableResponse;
 
 public class createIncidentPOST {
+
 	//To check git commands
+
+	//Create incident by using POST Method
+
 	Response response;
 	ValidatableResponse validatableResponse;
 
